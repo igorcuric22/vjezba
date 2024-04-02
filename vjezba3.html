@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>broj 1</title>
+
+        <style>
+            
+            body {
+                background-color: aqua;
+            }
+
+            h1 { background-color: blue;
+                color: red;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <h1>Vjezba</h1>
+
+        <p id="demo1"></p>
+
+        <script>
+            
+            const stvari =[ "Holstein", "IsoSport", "Madarice","PallMall","Sunka"];
+
+            let x = stvari.length;
+
+            let i = 0;
+            let text = "";
+
+            while(i < 5) {
+
+                text+=`<p style='background-color:red;'>${stvari[i]}</p>`;    
+                console.log(stvari[i]);
+                i++;
+
+            };
+
+            console.log(text);
+
+            document.getElementById("demo1").innerHTML=text;
+  
+        </script>
+
+         </body>
+</html>
